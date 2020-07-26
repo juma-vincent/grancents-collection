@@ -12,6 +12,7 @@ import { selectCurrentUser } from "./redux/user/user.selectors";
 import { createStructuredSelector } from "reselect";
 import CheckoutPage from "./pages/checkoutPage/checkoutPage";
 import CollectionPage from "./pages/collection/collection";
+import WithSpinner from "./components/withSpinner/withSpinner"; //
 
 class App extends Component {
   unsubsribeFromAuth = null;
@@ -42,8 +43,7 @@ class App extends Component {
 
         <Switch>
           <Route exact path="/" component={Homepage} />
-          <Route exact path="/shop" component={ShopPage} />
-          <Route exact path="/shop/:collectionId" component={CollectionPage} />
+          <Route path="/shop" component={ShopPage} />
 
           <Route
             exact
