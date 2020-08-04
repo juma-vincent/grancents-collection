@@ -6,7 +6,6 @@ import "./App.css";
 import Header from "./components/header/header";
 import SignInAndSignUpPage from "./pages/signinAndSignUp/signinAndSignUp";
 import { connect } from "react-redux";
-
 import { selectCurrentUser } from "./redux/user/user.selectors";
 import { createStructuredSelector } from "reselect";
 import CheckoutPage from "./pages/checkoutPage/checkoutPage";
@@ -32,7 +31,7 @@ const App = ({ checkUserSession, currentUser }) => {
             currentUser ? <Redirect to="/" /> : <SignInAndSignUpPage />
           }
         />
-        <Route exact path="/checkout" component={CheckoutPage} />
+        <Route path="/checkout" component={CheckoutPage} />
       </Switch>
     </div>
   );

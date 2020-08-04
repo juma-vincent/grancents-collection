@@ -1,4 +1,4 @@
-An e-commerce clothing app which Uses Node/Express js to process payments and Firebase to store the application data. The application uses React, Redux Saga and PWA.
+An e-commerce clothing app which Uses Node/Express js to process stripe payments and Firebase to store the application data. The application uses React, Redux Saga and PWA.
 
 <!-- This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
