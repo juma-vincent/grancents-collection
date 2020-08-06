@@ -20,6 +20,7 @@ export const CollectionItemContainer = styled.div`
   }
   @media screen and (max-width: 800px) {
     height: 200px;
+    width: 40vw;
   }
 `;
 export const BackgroundImage = styled.div`
