@@ -47,11 +47,11 @@ export const AddButton = styled(CustomButton)`
 `;
 
 export const NameContainer = styled.span`
-  width: 86%;
+  width: 80%;
   margin-bottom: 15px;
 `;
 
 export const PriceContainer = styled.span`
-  width: 14%;
+  width: 20%;
   text-align: right;
 `;
