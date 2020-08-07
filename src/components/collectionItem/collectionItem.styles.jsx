@@ -19,6 +19,11 @@ export const CollectionItemContainer = styled.div`
     }
   }
   @media screen and (max-width: 800px) {
+    button {
+      opacity: 0.85;
+      display: flex;
+      height: 40px;
+    }
     height: 200px;
     width: 40vw;
   }
@@ -38,6 +43,10 @@ export const CollectionFooterContainer = styled.div`
   display: flex;
   justify-content: space-between;
   font-size: 18px;
+
+  @media screen and (max-width: 800px) {
+    font-size: 14px;
+  }
 `;
 export const AddButton = styled(CustomButton)`
   width: 80%;
@@ -45,6 +54,12 @@ export const AddButton = styled(CustomButton)`
   position: absolute;
   top: 255px;
   display: none;
+
+  @media screen and (max-width: 800px) {
+    top: 120px;
+    width: 30vw;
+    font-size: 12px;
+  }
 `;
 
 export const NameContainer = styled.span`
