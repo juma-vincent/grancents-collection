@@ -20,15 +20,26 @@ export const LogoContainer = styled(Link)`
   height: 100%;
   width: 70px;
   padding: 25px;
+  padding-left: 85px;
+
+  .logo {
+    padding-bottom: 30px;
+    padding-right: 0px;
+  }
 
   @media screen and (max-width: 800px) {
-    width: 50px;
+    width: 20px;
     padding: 0px;
+    .logo {
+      padding-bottom: 60px;
+      padding-right: 60px;
+    }
   }
 
   @media screen and (max-width: 400px) {
     width: 20px;
     padding: 0px;
+    padding-bottom: 60px;
   }
 `;
 

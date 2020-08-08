@@ -1,5 +1,5 @@
 import React from "react";
-import { ReactComponent as Logo } from "../../assets/crown.svg";
+import { ReactComponent as Logo } from "../../assets/logo.svg";
 import { connect } from "react-redux";
 import { createStructuredSelector } from "reselect";
 import "./header.scss";
