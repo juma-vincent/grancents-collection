@@ -85,7 +85,7 @@ height: ${({ size }) => (size ? "380px" : "240px")};
 
   @media screen and (max-width: 800px) {
     height: 200px;
-    width: 20vw;     
+    width: 90vw;     
      
 
     &.large {
