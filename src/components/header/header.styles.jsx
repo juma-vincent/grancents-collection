@@ -60,6 +60,15 @@ export const OptionsContainer = styled.div`
 `;
 
 export const OptionLink = styled(Link)`
-  padding: 10px 15px;
+  padding: 5px 15px;
   cursor: pointer;
+  border-bottom: solid black 1px;
+  border-radius: 8px;
+  margin-right: 4px;
+
+  @media screen and (max-width: 400px) {
+    padding: 3px 7px;
+    margin-right: 4px;
+    border-radius: 5px;
+  }
 `;

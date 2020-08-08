@@ -45,7 +45,7 @@ export const CustomButtonContainer = styled.button`
   height: 50px;
   letter-spacing: 0.5px;
   line-height: 50px;
-  padding: 0 35px 0 35px;
+  padding: 0 15px 0 15px;
   font-size: 15px;
   background-color: black;
   color: white;
@@ -57,6 +57,7 @@ export const CustomButtonContainer = styled.button`
   outline: none;
   display: flex;
   justify-content: center;
+  margin-bottom: 2px;
 
   ${getButtonStyles}
 `;
