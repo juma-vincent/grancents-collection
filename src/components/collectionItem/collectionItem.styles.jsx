@@ -28,7 +28,7 @@ export const CollectionItemContainer = styled.div`
       }
     }
     height: 295px;
-    width: 90vw;
+    width: 40vw;
   }
   @media screen and (max-width: 400px) {
     height: 250px;
