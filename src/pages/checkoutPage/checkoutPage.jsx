@@ -1,5 +1,4 @@
 import React from "react";
-import "./checkoutPage.scss";
 import { connect } from "react-redux";
 import {
   selectCartItems,
@@ -8,38 +7,45 @@ import {
 import { createStructuredSelector } from "reselect";
 import CheckoutItem from "../../components/checkoutItem/checkoutItem";
 import StripeCheckoutButton from "./../../components/stripeButton/stripeButton";
+import {
+  CheckoutPageContainer,
+  CheckoutHeaderContainer,
+  HeaderBlockContainer,
+  TotalContainer,
+  WarningContainer,
+} from "./checkoutPage.styles";
 
 const CheckoutPage = ({ cartItems, totalPrice }) => {
   return (
-    <div className="checkout-page">
-      <div className="checkout-header">
-        <div className="header-block">
+    <CheckoutPageContainer>
+      <CheckoutHeaderContainer>
+        <HeaderBlockContainer>
           <span>Product</span>
-        </div>
-        <div className="header-block">
+        </HeaderBlockContainer>
+        <HeaderBlockContainer>
           <span>Description</span>
-        </div>
-        <div className="header-block">
+        </HeaderBlockContainer>
+        <HeaderBlockContainer>
           <span>Quantity</span>
-        </div>
-        <div className="header-block">
+        </HeaderBlockContainer>
+        <HeaderBlockContainer>
           <span>Price</span>
-        </div>
-        <div className="header-block">
+        </HeaderBlockContainer>
+        <HeaderBlockContainer>
           <span>Remove</span>
-        </div>
-      </div>
+        </HeaderBlockContainer>
+      </CheckoutHeaderContainer>
       {cartItems.map((cartItem) => (
         <CheckoutItem key={cartItem.id} cartItem={cartItem} />
       ))}
-      <div className="total">Total ${totalPrice}</div>
-      <div className="test-warning">
+      <TotalContainer>Total ${totalPrice}</TotalContainer>
+      <WarningContainer>
         *Please use the following test credit card for payments*
         <br />
         4000 0566 5566 5556 - Exp: 01/21 - CVV: 135
-      </div>
+      </WarningContainer>
       <StripeCheckoutButton price={totalPrice} />
-    </div>
+    </CheckoutPageContainer>
   );
 };
 
