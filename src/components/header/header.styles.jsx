@@ -62,9 +62,10 @@ export const OptionsContainer = styled.div`
 export const OptionLink = styled(Link)`
   padding: 5px 15px;
   cursor: pointer;
-  border-bottom: solid black 1px;
+  border-bottom: solid silver 1px;
   border-radius: 8px;
   margin-right: 4px;
+  box-shadow: 0px 1px 0px silver;
 
   @media screen and (max-width: 400px) {
     padding: 3px 7px;
