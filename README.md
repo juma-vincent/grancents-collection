@@ -1,14 +1,19 @@
-E-commerce clothing web application using React JS and Redux Saga for client side and  Google Firebase for backend.
+## E-commerce clothing web application.
 
-Make sure you got [Node.js](https://nodejs.org/en/) and then follow the following steps to run the application:
+### Tools used
+- React.
+- Redux Saga
+- Firebase store.
+
+Make sure you got [Node.js](https://nodejs.org/en/) and then follow the following steps.
+
+- Install the necessary dependencies:
 
 ```bash
 npm install
 ```
-
-to install the necessary dependencies.
+- Start the development server:
 
 ```bash
 npm run dev
 ```
-to start the react server.
